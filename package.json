@@ -1,0 +1,32 @@
+{
+  "name": "micro-app-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:all": "pnpm --filter \"./packages/**\" -r --stream run dev",
+    "build:all": "pnpm --filter \"./packages/**\" -r --stream run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-formatter-pretty": "^6.0.0",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,json,css,md}": ["prettier --write --ignore-unknown"],
+    "packages/*/{src,types}/**/*.ts": ["eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty --fix"],
+    "packages/**/*.d.ts": ["eslint --ext .ts"]
+  },
+  "packageManager": "pnpm@8.10.5",
+  "engines": {
+    "node": ">=16"
+  }
+}

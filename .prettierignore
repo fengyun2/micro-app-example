@@ -1,0 +1,19 @@
+/test/fixtures
+**/*.gif
+/dist
+/docs
+/es
+/lib
+/coverage
+.cache
+examples
+.umi
+.dumi
+.umi-production
+
+.changeset/*
+pnpm-lock.yaml
+packages/sandbox/src/core/globals.ts
+
+# changeset 会修改这个文件，导致 prettier:check 失败
+packages/**/*/package.json
