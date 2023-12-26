@@ -49,3 +49,11 @@ pnpm build:all
 │       └── package.json
 ```
 
+## TODO
+
+这里只是占个坑位
+
+由于 qiankun 3.0 版本还在开发中，所以暂时不支持 vite。静待花开...
+
+- [想问一下，未来是否考虑支持 vite](https://github.com/umijs/qiankun/issues/1257)
+- [qiankun 3.0 Roadmap](https://github.com/umijs/qiankun/discussions/1378)
